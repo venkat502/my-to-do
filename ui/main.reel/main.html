@@ -1,39 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>
-        Main
-    </title>
-    <link rel="stylesheet" href="main.css">
-    <script type="text/montage-serialization">
-    {
-        "owner": {
-            "properties": {
-                "element": {"#": "main"}
-            }
-        },
-        "text": {
-            "prototype": "montage/ui/text.reel",
-            "properties": {
-                "element": {"#": "text"},
-                "value": "My name is venkat"
-            }
-        },
-        "text22": {
-            "prototype": "montage/ui/text.reel",
-            "properties": {
-                "element": {"#": "text"},
-                "value": "My name is venkat22"
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Main</title>
+
+        <link rel="stylesheet" type="text/css" href="main.css">
+
+        <script type="text/montage-serialization">
+        {
+            "owner": {
+                "properties": {
+                    "element": {"#": "main"}
+                }
+            },
+
+            "manuals": {
+                "prototype": "ui/manuals.reel",
+                "properties": {
+                    "element": {"#": "manuals"}
+                }
             }
         }
-    }
-    </script>
-</head>
-<body>
-    <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <p data-montage-id="text"></p>
-        <p data-montage-id="text3"></p>
-    </div>
-</body>
+        </script>
+    </head>
+    <body>
+        <div data-montage-id="main" data-montage-skin="light" class="Main">
+            <div data-montage-id="manuals" class="row"></div>
+            <!-- <div data-montage-id="montageVersion"></div> -->
+        </div>
+    </body>
 </html>
